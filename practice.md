@@ -57,3 +57,37 @@ echo "偶数";
 echo "奇数";
 }
 ?>
+
+例題4
+1から100までの数値を順番に表示しますが、以下の条件に従って表示内容を変えるプログラムを書いてください。
+
+・3で割り切れる数の代わりに "Fizz" を表示
+・5で割り切れる数の代わりに "Buzz" を表示
+・3と5の両方で割り切れる数の代わりに "FizzBuzz" を表示
+・上記のいずれの条件も満たさない場合は、その数値を表示
+<?php
+for ($i = 1; $i <= 100; $i++) {
+if ($i % 15 == 0) {
+echo "FizzBuzz";
+} elseif ($i % 3 == 0) {
+echo "Fizz";
+} elseif ($i % 5 == 0) {
+echo "Buzz";
+} else {
+echo $i;
+}
+}
+?>
+
+例題5
+2つの数値を引数として受け取り、それらの数値の平均値を計算して返す関数 calculateAverage を定義し、それを使用して平均値を計算して表示するPHPプログラムを書いてください。
+<?php
+function calculateAverage($num1, $num2) {
+$average = ($num1 + $num2) / 2;
+return $average;
+}
+$number1 = 30;
+$number2 = 50;
+
+echo "平均値: ".calculateAverage($number1, $number2);
+?>
