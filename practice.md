@@ -91,3 +91,26 @@ $number2 = 50;
 
 echo "平均値: ".calculateAverage($number1, $number2);
 ?>
+
+例題6
+以下の配列にはいくつの要素が含まれており、その合計値はいくつですか？また、平均値はいくつですか？それぞれ計算するPHPプログラムを書いてください。
+<?php
+$numbers = array(15, 28, 9, 42, 7);
+
+$total = array_sum($numbers);
+$count = count($numbers);
+$average = $total / $count;
+
+echo "合計値: ".$total;
+echo "<br/>";
+echo "平均値: ".$average;
+?>
+
+例題7
+ある商品の価格が税抜きで与えられています。消費税率が8%の場合、税込み価格を計算して表示するPHPプログラムを書いてください。
+<?php
+$taxExcluded = 100;
+$taxRate = 8;
+$taxIncluded = ($taxRate / $taxExcluded) * 100 + $taxExcluded;
+echo $taxIncluded;
+?>
