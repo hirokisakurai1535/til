@@ -1,0 +1,11 @@
+　文字列操作関数
+・strlen/mb_strlen...文字列の長さを取得する。文字数を取得したい場合は「mb_strlen」を使う。
+・strcmp/strcasecamp...文字列の比較をする。基本的に大文字と小文字は区別されるが、区別したくない場合は「strcasecmp」を使う。
+・substr/mb_substr...文字列を取り出す。日本語を用いる場合は「mb_substr」を使う。
+・trim...先頭と末尾の空白を取り除く。先頭だけを対象にする場合は「ltrim」,末尾だけを対象にする場合は「rrim」を使う。
+・substr_replace/preg_replace...文字列を置換する。
+・strpos/preg_match...文字列を探す。
+・strstr...指定文字以降の文字列を取得する。
+・substr_count...文字列をカウントする。(文字列1, 文字列2)
+・str_repeat...文字列の反復をする。(文字列, 反復回数)
+・str_pad...文字埋めをする。
