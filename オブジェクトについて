@@ -1,0 +1,28 @@
+<?php
+//　クラス
+class Post
+{
+//　プロパティ
+  public $text;
+  public $likes;
+  //　メソッド
+  public function show() {
+    printf('%s (%d)' . PHP_EOL, $this->text, $this->likes);
+  }
+}
+
+$posts = [];
+$posts[0] = ['text' => 'hello', 'likes' => 0];
+$posts[1] = ['text' => 'hello again', 'likes' => 0];
+
+function show($post)
+{
+  printf('%s (%d)' . PHP_EOL, $post['text'], $post['likes']);
+}
+
+show($posts[0]);
+show($posts[1]);
+
+・ここで定義した構造のことを「クラス」
+・クラスの中で宣言した変数は「プロパティ」
+・クラスの中で定義した関数は「メソッド」
