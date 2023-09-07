@@ -38,3 +38,6 @@ show($posts[1]);
 親クラスのプロパティがprivateの場合は、protectedに変更しないとエラーになる。protected＝親クラスと継承したクラスでも使える。
 ・overrideを禁止する場合は、メソッドのアクセス修飾子の前にfinalを付ける。
 ・GET...情報の取得/POST...情報の追加、更新、削除。
+・サイトやページなどを新しいURLに変更した際、自動的に転送をさせるには、リダイレクトすればいいので、header関数を使う。
+header('Location: http://転送先のurl');
+・トークンの生成は、 bin2hex(random_bytes(16))これ使う。
