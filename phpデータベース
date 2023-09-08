@@ -14,3 +14,7 @@ MySOLだとこんな感じ。
 
 ・fetchAll()...複数の値を一気に取得することができる。
 ・$pdo->query("行いたい処理");で、MySOLみたいなやつが使える。
+
+・$stmt = $pdo->prepare("DELETE FROM posts WHERE likes < ?");
+  $stmt->execute([$n]);
+よくわからん。
