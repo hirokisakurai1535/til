@@ -1,1 +1,15 @@
+・PDOというオブジェクトを使用すれば、PHPからデータベースへのアクセスを抽象化してくれるので、MySOL等のデータベースの種類が変わっても、
+phpのコード自体を変える必要がなくなる。
+<?php
+  
+  $pdo = new PDO(
+    // DSN
+    'mysql:host=db;dbname=myapp;charset=utf8mb4',
+    // user
+    'dbuser',
+    // password
+    'dbpass'
+    );
+MySOLだとこんな感じ。
 
+・
