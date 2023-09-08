@@ -18,3 +18,4 @@ MySOLだとこんな感じ。
 ・$stmt = $pdo->prepare("DELETE FROM posts WHERE likes < ?");
   $stmt->execute([$n]);
 値を埋め込まないSQLは関係ないが、値を埋め込むSQLの場合、必ずこのプリペアードステートメントを使用する。
+・プリペアードステートメントでLIKEを使う場合は、%の付ける位置が変わってくるので、気を付ける。
