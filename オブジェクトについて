@@ -41,3 +41,4 @@ show($posts[1]);
 ・サイトやページなどを新しいURLに変更した際、自動的に転送をさせるには、リダイレクトすればいいので、header関数を使う。
 header('Location: http://転送先のurl');
 ・トークンの生成は、 bin2hex(random_bytes(16))これ使う。
+・returnがあるfunction(getter)は、変数に代入してあげる。
