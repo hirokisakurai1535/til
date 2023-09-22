@@ -21,4 +21,6 @@
 ・LOAD DATA LOCAL INFILE '移したい外部ファイル' INTO TABLE 移したい場所(テーブル)...で、外部ファイルを読み込める。
 ただし、この下にオプションを付け加える必要がある。
 ・localhost = 127.0.0.1
-・docker exec -it -u 1000:1000 db-practice bash
+dockerコマンドからmysqlに入るところ
+・docker exec -it -u 1000:1000(無くても大丈夫) db-practice(DBコンテナ名) bash
+mysql -u (ユーザー名) -p(パスワード) -h (ホスト名);
