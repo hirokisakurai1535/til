@@ -22,5 +22,9 @@
 ただし、この下にオプションを付け加える必要がある。
 ・localhost = 127.0.0.1
 dockerコマンドからmysqlに入るところ
+・docker-compose up -d
+dockerのコンテナを立ち上げる、複数のコンテナを立ち上げることができてdocker-compose.ymlの通りに処理してくれる。
+dockerコマンドで立ち上げてしまうと、一個ずつしかコンテナを立ち上げられないので、処理の順番通りに作らないといけなくて大変。
 ・docker exec -it -u 1000:1000(無くても大丈夫) db-practice(DBコンテナ名) bash
 mysql -u (ユーザー名) -p(パスワード) -h (ホスト名);
+dockerのコンテナにアクセスしてから、MySQLに入る方法。
