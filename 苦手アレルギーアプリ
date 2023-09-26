@@ -1,1 +1,6 @@
-・applicationのcontrollersの中に、静的なページを処理するコントローラーの、login.phpを作る。
+・applicationのcontrollersの中に、静的なページを処理するコントローラーの、Login.phpを作る。
+・ビューにtemplatesフォルダを作り、中にheaderとfooterを作り、loginフォルダの中にindexを作り、ログイン画面のhtmlを打つ。
+・コントローラーのLogin.phpの中に、ビューのlogin情報を$this->load->view();で埋め込む。
+・コントローラーにemployeeを作る。
+・ビューにemployeeフォルダを作り、htmlを打つ。
+・コントローラーのEmployee.phpの中に、ビューのemployee情報を$this->load->view();で埋め込む。
