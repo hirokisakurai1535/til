@@ -1,1 +1,23 @@
+・git labでプロジェクトを作成する。
+・ターミナルで、該当のファイルまで移動して、git initする。
+・git remote add origin http://localhost～のように、httpを指定して、リモートの設定をする。
+・git add .で、そのファイルを加えている。
+・git commit -m "Initial commit"で、メッセージ付きでコミットできる。
+・git push -u origin masterで、プッシュできる。-u (git remote addに続く名前) (ブランチ名、基本的にはmasterブランチ)
 
+・git status
+・git diff
+・git checkout
+頻出する
+
+修正方法
+    ↓
+エディタでコードの修正をする
+    ↓
+git diff
+    ↓
+git add .
+    ↓
+git commit -m "どこをどう修正したかコメントを書く"
+    ↓
+git pushで上げる。
