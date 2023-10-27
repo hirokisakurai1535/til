@@ -47,9 +47,8 @@ contents.blocks
 ・git clone (sshのurl)
 ・trinityができるので、cdで移動
 ・git labのREADEME.mdを読む
-・cp .env{dist}する
+・cp .env{.dist,}する
 ・cp Makefile.dist Makefileする
 ・make installする
 ・docker-compose up -dする
-・publicのcms-adminのuploadedfilesの書き込み権限を付ける
-・chmod -R 777 uploadedfilesする
+・publicのcms-adminのuploadedfilesの書き込み権限を付ける(chmod -R 777 uploadedFilesする)
