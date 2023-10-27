@@ -39,7 +39,7 @@ contents.blocks
 ★トップと下層の関連付けは注視する。下層等もしっかり表示で確認できるように、第二階層までページ・リンク・テキストを入力しておく。
 
 ☆DB作成方法
-・trinityでmysql -u root -pabcd0123 -h 127.0.0.1 cms3_tokoname(ディレクトリ名) < 003_patch2019-10-28.sqlのように、順番にsqlを追加していく。
+・trinity/public/cms-admin/configs/client-config.ymlでmysql -u root -pabcd0123 -h 127.0.0.1 cms3_tokoname(ディレクトリ名) < 003_patch2019-10-28.sqlのように、順番にsqlを追加していく。
 ・trinity/public/cms-admin/configs/client-config.ymlをvimで開いて、dbnameを自分で作成したものに変更する。
 
 ☆trinityの落とし方
