@@ -1,3 +1,2 @@
 ・trinity/.docker/mysql/docker-entrypoint-initdb.dでmysql -u root -pabcd0123 -h 127.0.0.1 cms3_tokoname(ディレクトリ名) < 003_patch2019-10-28.sqlのように、順番にsqlを追加していく。
 ・trinity/public/cms-admin/configs/client-config.ymlをvimで開いて、dbnameを自分で作成したものに変更する。
-・
