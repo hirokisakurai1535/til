@@ -1,0 +1,7 @@
+・~/til/artis/cms3/trinityでmake mountする。
+→docker compose up -dする。(ローカルのCMS3達が立ち上がる？)
+→
+
+→別タブで、175(192.168.1.175)にssh接続して、単純なリンク先変更や、軽微な修正なら/var/www/current/Templatesを、
+cssや画像データがコーディングから送られていたら(commonが変更されていたら)、public_htmlに移動する。
+→
