@@ -5,3 +5,8 @@
 →別タブで、175(192.168.1.175)にssh接続して、単純なリンク先変更や、軽微な修正なら/var/www/current/Templatesを、
 cssや画像データがコーディングから送られていたら(commonが変更されていたら)、public_htmlに移動する。
 →
+
+・コーディングからのデータと、175にあるテンプレをdiffcheckerを使ってdiffを見つけて、vimか、
+一旦PhpStormに落として修正する。
+修正したらgit status->diff->add->commitする。(lipstick付けても良い)
+
